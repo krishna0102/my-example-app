@@ -15,6 +15,12 @@ app.get('/backend', (req, res) => {
   res.json({ message: 'Welcome to the Backend API' });
 });
 
+// New feature route
+app.get('/new-feature', (req, res) => {
+  res.json({ message: 'Welcome to the new feature API' });
+});
+
+
 // API route
 app.get('/api', (req, res) => {
   res.json({ message: 'Welcome to the API' });
