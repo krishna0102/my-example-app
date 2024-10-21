@@ -10,6 +10,11 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+// Backend route
+app.get('/backend', (req, res) => {
+  res.json({ message: 'Welcome to the Backend API' });
+});
+
 // API route
 app.get('/api', (req, res) => {
   res.json({ message: 'Welcome to the API' });
